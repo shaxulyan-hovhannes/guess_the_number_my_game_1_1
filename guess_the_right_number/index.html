@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Number guessing game</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body >
+        <main>
+            <header>
+                <h1>Guess The Number</h1>
+                <p>Try to guess the number. You have to  guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+            </header>
+            <section class="gameSettings">
+                <input type="radio" name="lvl" id="levA" /> <label for="levA">Level A [1 - 100 num]</label>
+                <input type="radio" name="lvl" id="levB" /> <label for="levB">Level B [1 - 500 num]</label> 
+                <input type="radio" name="lvl" id="levC" /> <label for="levC">Level C [1 - 1000 num]</label>
+                <input type="text" name="nm" placeholder="Name*" />
+                <input type="submit" name="sbm" value="Start New Game" id="startNewGame" /> <!-- startNewGame -->
+                <span id="yourName"></span> <!-- yourName -->
+                <span id="score">Score <span id="scoreValue"></span></span> <!-- score --> <!-- scoreValue -->
+            </section>
+            <section class="gameProcess">
+                <label for="guessValue">Enter a guess</label>
+                <input type="text" name="guessText" id="guessValue" disabled />
+                <input type="submit" name="sbm" value="Submit a guess" id="submit" disabled />
+            </section>
+            <footer>
+                <p id="allNum">Previous guesses:&nbsp;</p>
+                <p id="lastNum"></p>
+                <p id="tip"></p>
+            </footer>
+        </main>
+         <script src="js/script.js"></script>
+    </body>
+</html>
